@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+.plug{
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.7) 100%);;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    padding: 90px 0 ;
+}
+@media screen and (max-width:767px) {
+    .plug{
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0.7) 100%);;
+    }
+}
+.buble{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(images/cta.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+.plug-form input {
+    border: none;
+    background: none;
+    border-radius: 0;
+    border-bottom: 1px solid #bbb;
+    color: #fff;
+    font-family: Ubuntu, sans-serif;
+}
+.plug-form textarea {
+    max-height: 300px;
+    min-height: 130px;
+    border: none;
+    background: none;
+    border-radius: 0;
+    border-bottom: 1px solid #bbb;
+    color: #fff;
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    height: 130px;
+}
+@media screen and (max-width:767px) {
+    .plug-form textarea {
+        min-height: 90px;
+        height: 90px;
+    }
+}
+
+.plug-form input:focus, .plug-form textarea:focus{
+    background: none;
+    box-shadow: none;
+    color: #fff;
+}
+.bubbly-button {
+    display: inline-block;
+    font-size: 1em;
+    font-family: Ubuntu, sans-serif;
+    padding: 1em 2em;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #ff0081;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    box-shadow: 0 2px 25px rgb(255 0 130 / 50%);
+    text-transform: uppercase;
+}
+@media screen and (max-width:767px) {
+    .plug-form{
+        padding-top: 160px;
+    }
+}
+h2.plug-title{
+    font-size: 50px;
+    font-family: Ubuntu, sans-serif;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+h2.plug-title > span{
+    color: #ff0081;
+}
+.plug-link{
+    font-size: 24px;
+    font-family: Ubuntu, sans-serif;
+    color: white;
+    font-weight: 400;
+}
+.plug-link:hover{
+    color:#bbb;
+    text-decoration: none;
+}
+@media screen and (max-width:1199px) and (min-width:992px) {
+    h2.plug-title{
+        font-size: 40px;
+    }
+    .plug-link{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:991px) and (min-width:768px) {
+    h2.plug-title{
+        font-size: 30px;
+    }
+    .plug-link{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:767px) {
+h2.plug-title{
+    font-size: 37px;
+}
+.plug-link{
+    font-size: 18px;
+}
+}
+@media screen and (min-width:569px) and (max-width:575px) {
+    h2.plug-title{
+        font-size: 38px;
+    } 
+}
